@@ -1,0 +1,48 @@
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Oswald|Quicksand&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      <div class="logo">
+        <img src="../../../assets/dom.png">
+      </div>
+      <ul class="links">
+            <li><a [routerLink]="['/userhome']">Home</a></li>
+            <li class="colarr"><a [routerLink]="['/cart']">My cart</a></li>
+            <li class="colarr"><a [routerLink]="['/myprofile']">My Profile</a></li>
+            <li class="colarr"><a [routerLink]="['/userfeedback']">Contact Us</a></li>
+            <li class="nav-item"><a id="colarr" [routerLink]="['/']" (click)="logoutuser()">logout</a></li>
+            
+
+
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+  
+  
+
+
+
+</body>
+
+</html>

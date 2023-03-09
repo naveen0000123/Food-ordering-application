@@ -1,0 +1,34 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 20%;
+
+}
+
+/* remove s3 when */
+@media screen and (max-width: 992px) {
+#s3,#s4,#s5{
+    display: none;
+}
+
+}
+@media screen and (max-width: 359px) {
+  #hdr{
+      display: none;
+  }
+
+}
+
+
+.img-fluid{
+  transition: 0.4s ease;
+  margin-bottom: 20px;
+}
+.img-fluid:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+}

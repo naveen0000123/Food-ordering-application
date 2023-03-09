@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='uhome.css'> -->
+  <!-- nav font -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+
+  <!-- fafa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body >
+  <app-navbar></app-navbar>
+
+  <main>
+    <section class="cards">
+
+      <div class="crd" *ngFor="let pizza of pizzas">
+        <div class="card__image-container">
+          <img src="../../../assets/pizza/{{pizza.pizzaimage}}" alt="Detailed image description would go here." style="width: auto; height:100%;" />
+        </div>
+        <div class="card__content">
+          <h5 class="card__title text--medium" style="text-align: center; color: red;">Name</h5>
+          <p class="card__title text--medium" style="text-align: center;">{{pizza.pizzaname}}
+          </p>
+          <h5 class="card__title text--medium" style="text-align: center; color: red;">Size</h5>
+
+          <p class="card__title text--medium" style="text-align: center;">{{pizza.pizzasize}}</p>
+          <h5 class="card__title text--medium" style="text-align: center; color: red;">Price</h5>
+
+          <p class="text--medium rs" style="text-align: center;"><b>Rs. {{pizza.pizzaprice}}</b></p>
+          <div class="card__info">
+            
+            <p class="card__price text--medium bt" style="text-align: center; padding-top: 20%;" > 
+              <button id="add" class="btn btn-danger add" (click)="addtocart(pizza)"
+                data-val="false">Add to cart</button>
+          </div>
+      </div>
+      </div>
+
+    </section>
+  </main>
+
+
+</body>
+
+</html>
